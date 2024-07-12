@@ -4,5 +4,6 @@ ROOTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # $ROOTDIR/scripts/update-tekton-definition
 # $ROOTDIR/scripts/import-gitops-template
 # $ROOTDIR/scripts/import-ai-lab-samples
+#test
 touch $ROOTDIR/test.txt
 echo TEST >> $ROOTDIR/test.txt
