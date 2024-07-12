@@ -20,6 +20,7 @@ jobs:
           if [[ ! -z $(git status -s) ]]
           then
             echo 'Command `bash ./generate.sh` did introduce changes, which should be ideally checked in as part of your PR.'
-            echo git diff: $(git diff)
+            GIT_DIFF_OUTPUT=$(git diff)
+            echo git diff: $GIT_DIFF_OUTPUT
             exit 1
           fi
