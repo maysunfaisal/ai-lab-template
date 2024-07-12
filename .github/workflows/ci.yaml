@@ -1,0 +1,25 @@
+name: CI
+
+# Triggers the workflow on push or pull request events but only for the main branch
+on:
+  push:
+    branches: [ DEVHAS-715-1 ]
+  pull_request:
+    branches: [ DEVHAS-715-1 ]
+
+jobs:
+  build-and-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.1.7
+
+      - name: Generate Go sources, CRDs and schemas
+        run: |
+          bash generate.sh
+          if [[ ! -z $(git status -s) ]]
+          then
+            echo 'Command `bash ./generate.sh` did introduce changes, which should be ideally checked in as part of your PR.'
+            git --no-pager diff
+            exit 1
+          fi
