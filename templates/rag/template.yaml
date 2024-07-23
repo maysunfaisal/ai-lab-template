@@ -2,9 +2,9 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: rag2
-  title: RAG2 Application
-  description: RAG2 Application example with LLM and a Vector DB enabled for chat applications
+  name: rag3
+  title: RAG3 Application
+  description: RAG3 Application example with LLM and a Vector DB enabled for chat applications
   tags: ["ai", "llamacpp", "vllm", "python", "rag"]
 spec:
   type: service
