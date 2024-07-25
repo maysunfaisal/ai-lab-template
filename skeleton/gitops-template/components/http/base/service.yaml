@@ -11,5 +11,8 @@ spec:
   - port: ${{ values.appPort }}
     protocol: TCP
     targetPort: ${{ values.appPort }}
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
   selector:
     app.kubernetes.io/instance: ${{ values.name }} 
