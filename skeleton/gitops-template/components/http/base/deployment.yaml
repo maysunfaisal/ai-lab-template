@@ -32,7 +32,7 @@ spec:
         - containerPort: ${{ values.appPort }}
         securityContext:
           runAsNonRoot: true
-      - image: quay.io/maysunfaisal/chroma:latest
+      - image: quay.io/maysunfaisal/chroma-uid:latest
         name: vectordb
         ports:
         - containerPort: 8000
