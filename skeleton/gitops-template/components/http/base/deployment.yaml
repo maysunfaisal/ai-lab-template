@@ -36,3 +36,9 @@ spec:
         - containerPort: ${{ values.appPort }}
         securityContext:
           runAsNonRoot: true
+      - image: chromadb/chroma
+        name: vectordb
+        ports:
+        - containerPort: 8000
+        securityContext:
+          runAsNonRoot: true
