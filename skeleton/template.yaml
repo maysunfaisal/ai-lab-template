@@ -312,6 +312,8 @@ spec:
           modelEndpoint: ${{ parameters.modelEndpoint }}
           # for RHOAI
           rhoaiSelected: ${{ parameters.rhoaiSelected }}
+          # Database is required for the RAG templates
+          dbRequired: ${DB_REQUIRED}
     - action: fs:rename
       id: renameComponentDir
       name: Rename Component Directory

@@ -32,9 +32,11 @@ spec:
         - containerPort: ${{ values.appPort }}
         securityContext:
           runAsNonRoot: true
-      - image: quay.io/maysunfaisal/chroma-uid:latest
-        name: vectordb
+      {%- if values.dbRequired %}
+      - image: quay.io/redhat-ai-dev/chroma:latest
+        name: database
         ports:
         - containerPort: 8000
         securityContext:
           runAsNonRoot: true
+      {%- endif %}
