@@ -2,10 +2,10 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: rag10
-  title: RAG10 Application
-  description: RAG10 Application example with LLM and a Vector DB enabled for chat applications
-  tags: ["ai", "llamacpp", "vllm", "python", "rag"]
+  name: rag
+  title: RAG Chatbot Application
+  description: "RAG Chatbot Application example with an LLM and a Vector database enabled"
+  tags: ["ai", "llamacpp", "vllm", "python", "rag", "database"]
 spec:
   type: service
   # These parameters are used to generate the input form in the frontend, and are
@@ -252,6 +252,8 @@ spec:
           # SED_MODEL_SERVER_END
           # for RHOAI
           rhoaiSelected: ${{ parameters.rhoaiSelected }}
+          # Database is required for the RAG templates
+          dbRequired: true
     - action: fs:rename
       id: renameComponentDir
       name: Rename Component Directory
