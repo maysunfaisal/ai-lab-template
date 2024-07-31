@@ -33,10 +33,10 @@ spec:
         securityContext:
           runAsNonRoot: true
       {%- if values.dbRequired %}
-      - image: quay.io/redhat-ai-dev/chroma:latest
+      - image: ${{ values.dbContainer }}
         name: database
         ports:
-        - containerPort: 8000
+        - containerPort: ${{ values.dbPort }}
         securityContext:
           runAsNonRoot: true
       {%- endif %}
