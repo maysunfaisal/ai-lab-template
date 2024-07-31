@@ -18,3 +18,5 @@ export APP_INTERFACE_CONTAINER="quay.io/redhat-ai-dev/rag:latest"
 
 # Database Required
 export DB_REQUIRED=true
+export DB_CONTAINER="quay.io/redhat-ai-dev/chroma:latest"
+export DB_PORT=8000

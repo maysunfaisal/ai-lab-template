@@ -254,6 +254,8 @@ spec:
           rhoaiSelected: ${{ parameters.rhoaiSelected }}
           # Database is required for the RAG templates
           dbRequired: true
+          dbContainer: quay.io/redhat-ai-dev/chroma:latest
+          dbPort: 8000
     - action: fs:rename
       id: renameComponentDir
       name: Rename Component Directory
