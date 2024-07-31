@@ -313,6 +313,8 @@ spec:
           rhoaiSelected: ${{ parameters.rhoaiSelected }}
           # Database is required for the RAG templates
           dbRequired: ${DB_REQUIRED}
+          dbContainer: ${DB_CONTAINER}
+          dbPort: ${DB_PORT}
     - action: fs:rename
       id: renameComponentDir
       name: Rename Component Directory

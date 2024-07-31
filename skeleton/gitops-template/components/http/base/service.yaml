@@ -14,9 +14,9 @@ spec:
     targetPort: ${{ values.appPort }}
   {%- if values.dbRequired %}
   - name: database
-    port: 8000
+    port: ${{ values.dbPort }}
     protocol: TCP
-    targetPort: 8000
+    targetPort: ${{ values.dbPort }}
   {%- endif %}
   selector:
     app.kubernetes.io/instance: ${{ values.name }} 
