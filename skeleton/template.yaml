@@ -312,7 +312,7 @@ spec:
           # for RHOAI
           rhoaiSelected: ${{ parameters.rhoaiSelected }}
           # Database is required for the RAG templates
-          dbRequired: ${DB_REQUIRED}
+          dbRequired: ${SUPPORT_DB}
           dbContainer: ${DB_CONTAINER}
           dbPort: ${DB_PORT}
     - action: fs:rename
