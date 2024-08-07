@@ -17,7 +17,6 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade -r /rag/requirements.txt
 COPY rag_app.py .
 COPY manage_vectordb.py .
-# RUN chgrp -R 0 /rag && chmod -R g=u /rag
 EXPOSE  8501
 ENV  HF_HUB_CACHE=/rag/models/
 RUN mkdir -p /rag/models/
