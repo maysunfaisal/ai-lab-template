@@ -12,6 +12,7 @@ import os
 
 model_service = os.getenv("MODEL_ENDPOINT","http://0.0.0.0:8001")
 model_service = f"{model_service}/v1"
+model_name = os.getenv("MODEL_NAME", "") 
 chunk_size = os.getenv("CHUNK_SIZE", 150)
 embedding_model = os.getenv("EMBEDDING_MODEL","BAAI/bge-base-en-v1.5")
 vdb_vendor = os.getenv("VECTORDB_VENDOR", "chromadb")
@@ -71,8 +72,7 @@ if "messages" not in st.session_state:
     
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
-    
-model_name = os.getenv("MODEL_NAME", "") 
+
 
 llm = ChatOpenAI(base_url=model_service, 
                  api_key="EMPTY",
