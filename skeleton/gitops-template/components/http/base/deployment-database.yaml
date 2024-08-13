@@ -25,6 +25,9 @@ spec:
       containers:
       - image: ${{ values.dbContainer }}
         name: database
+        args: [
+            "--port",
+            "${{ values.dbPort }}"]
         ports:
         - containerPort: ${{ values.dbPort }}
         securityContext:
