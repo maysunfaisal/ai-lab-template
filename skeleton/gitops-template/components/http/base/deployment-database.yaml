@@ -26,8 +26,17 @@ spec:
       - image: ${{ values.dbContainer }}
         name: database
         args: [
+            "--workers",
+            "1", 
+            "--host", 
+            "0.0.0.0",
             "--port",
-            "${{ values.dbPort }}"]
+            "${{ values.dbPort }}",
+            "--proxy-headers", 
+            "--log-config", 
+            "chromadb/log_config.yml", 
+            "--timeout-keep-alive", 
+            "30"]
         ports:
         - containerPort: ${{ values.dbPort }}
         securityContext:
