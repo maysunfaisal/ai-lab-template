@@ -6,4 +6,6 @@ resources:
 - dsp-job-sa.yaml
 - initialize-dsp.yaml
 - dsp-clone-job.yaml
-- dsp-imagestream.yaml
+- create-imagestream.yaml
+- imagestream-job-rb.yaml
+- imagestream-job-role.yaml
