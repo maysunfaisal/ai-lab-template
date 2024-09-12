@@ -9,3 +9,4 @@ resources:
 - create-imagestream.yaml
 - imagestream-job-rb.yaml
 - imagestream-job-role.yaml
+- imagestream-job-sa.yaml
