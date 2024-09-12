@@ -7,9 +7,6 @@ metadata:
     pipelinesascode.tekton.dev/on-target-branch: "[${{ values.defaultBranch }}]"
     pipelinesascode.tekton.dev/pipeline: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/pipelines/gitops-pull-request-ai-rhdh.yaml"
     pipelinesascode.tekton.dev/task-0: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/git-clone.yaml"
-    pipelinesascode.tekton.dev/task-1: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/gather-deploy-images.yaml"
-    pipelinesascode.tekton.dev/task-2: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/download-sbom-from-url-in-attestation.yaml"
-    pipelinesascode.tekton.dev/task-3: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/upload-sbom-to-trustification.yaml"
   labels:
     argocd/app-name: ${{ values.name }}
     janus-idp.io/tekton: ${{ values.name }}
@@ -24,8 +21,6 @@ spec:
       value: '{{revision}}'
     - name: target-branch
       value: '{{target_branch}}'
-    - name: fail-if-trustification-not-configured
-      value: 'false'
   pipelineRef:
     name: gitops-pull-request
   workspaces:
