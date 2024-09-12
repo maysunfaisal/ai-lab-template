@@ -47,6 +47,6 @@ spec:
                     importMode: Legacy
                   referencePolicy:
                     type: Source
-            EOF
+          EOF
           fi
       restartPolicy: Never
