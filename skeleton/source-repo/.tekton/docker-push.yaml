@@ -40,9 +40,6 @@ spec:
   pipelineRef:
     name: docker-build-ai-rhdh
   workspaces:
-    - name: gitops-auth
-      secret:
-        secretName: $(params.gitops-auth-secret-name)
     - name: git-auth
       secret:
         secretName: "{{ git_auth_secret }}"
