@@ -11,7 +11,8 @@ metadata:
     pipelinesascode.tekton.dev/task-1: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/git-clone.yaml"
     pipelinesascode.tekton.dev/task-2: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/buildah-ai-rhdh.yaml"
     pipelinesascode.tekton.dev/task-3: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/update-deployment.yaml"
-    pipelinesascode.tekton.dev/task-4: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/summary.yaml"
+    pipelinesascode.tekton.dev/task-4: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/show-sbom-rhdh.yaml"
+    pipelinesascode.tekton.dev/task-5: "https://raw.githubusercontent.com/Jdubrick/ai-rhdh-tekton-pipelines/pipeline-definition-overhaul/pac/tasks/summary.yaml"
   labels:
     argocd/app-name: ${{ values.name }}
     janus-idp.io/tekton: ${{ values.name }}

@@ -31,15 +31,15 @@ function add-backstage-labels () {
 
 #source and gitops tekton copied, note new names 
 SRC_TEKTON=$ROOTDIR/skeleton/source-repo/.tekton 
-# GITOPS_TEKTON=$ROOTDIR/skeleton/gitops-template/.tekton 
+GITOPS_TEKTON=$ROOTDIR/skeleton/gitops-template/.tekton 
 
 rm -rf $SRC_TEKTON
 mkdir -p $SRC_TEKTON   
 cp -r $TEMPDIR/$REPONAME/pac/source-repo/. $SRC_TEKTON
 
-# rm -rf $GITOPS_TEKTON
-# mkdir -p $GITOPS_TEKTON   
-# cp -r $TEMPDIR/$REPONAME/pac/gitops-repo/. $GITOPS_TEKTON
+rm -rf $GITOPS_TEKTON
+mkdir -p $GITOPS_TEKTON   
+cp -r $TEMPDIR/$REPONAME/pac/gitops-repo/. $GITOPS_TEKTON
 
 rm -rf $TEMPDIR
  
