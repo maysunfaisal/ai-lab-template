@@ -78,11 +78,3 @@ rules:
       - "batch"
     resources:
       - jobs
-  - verbs:
-      - get
-      - create
-      - list
-    apiGroups:
-      - "image.openshift.io"
-    resources:
-      - imagestreams

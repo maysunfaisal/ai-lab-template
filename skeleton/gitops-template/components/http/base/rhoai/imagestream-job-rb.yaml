@@ -5,8 +5,8 @@ metadata:
   namespace: redhat-ods-applications
 subjects:
   - kind: ServiceAccount
-    name: imagestream-job
-    namespace: redhat-ods-applications
+    name: ${{ values.name }}-dsp-job
+    namespace: ${{ values.namespace }}
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
