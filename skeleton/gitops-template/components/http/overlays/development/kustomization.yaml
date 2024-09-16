@@ -3,6 +3,7 @@ kind: Kustomization
 patchesStrategicMerge:
 - deployment-patch.yaml
 resources:
+- ../../rhoai-ods-app 
 - ../../base 
 - gitops-repository.yaml
 - source-repository.yaml
