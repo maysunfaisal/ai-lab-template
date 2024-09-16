@@ -1,7 +1,7 @@
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: imagestream-job-role
+  name: imagestream-job-role-test
   namespace: redhat-ods-applications
 rules:
   - verbs:
