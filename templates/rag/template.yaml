@@ -2,9 +2,9 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: rag10
-  title: RAG 10 Chatbot Application
-  description: RAG 10 Chatbot Application example with an LLM and a Vector database enabled
+  name: rag11
+  title: RAG 11 Chatbot Application
+  description: RAG 11 Chatbot Application example with an LLM and a Vector database enabled
   tags: ["ai", "llamacpp", "vllm", "python", "rag", "database"]
 spec:
   type: service
