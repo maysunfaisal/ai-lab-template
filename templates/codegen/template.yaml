@@ -2,9 +2,9 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: codegen
-  title: Code Generation Application
-  description: Code Generation Application example that generate code in countless programming languages.
+  name: codegen12d
+  title: Code 12d Generation Application
+  description: Code 12d Generation Application example that generate code in countless programming languages.
   tags: ["ai", "llamacpp", "vllm", "python"]
 spec:
   type: service
