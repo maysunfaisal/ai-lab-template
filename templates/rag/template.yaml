@@ -2,9 +2,9 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: rag
-  title: RAG Chatbot Application
-  description: Enhance the capabilities of your Chatbot using a Retrieval-Augmented Generation (RAG) Chatbot application. Pick from the model servers available or bring your own.
+  name: ragt
+  title: RAGt Chatbot Application
+  description: Enhancet the capabilities of your Chatbot using a Retrieval-Augmented Generation (RAG) Chatbot application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python", "rag", "database"]
 spec:
   type: service
