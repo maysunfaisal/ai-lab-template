@@ -65,6 +65,7 @@ spec:
                 # SED_LLM_SERVER_START
                 modelName:
                   title: Model Name
+                  default: ""
                   type: string
                   ui:help: "The name of the model deployed on the model server you would like to use."
                 # SED_LLM_SERVER_END
