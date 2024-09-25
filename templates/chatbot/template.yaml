@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: chatbot
-  title: Chatbot Application
+  name: chatbot2
+  title: Chatbot2 Application
   description: Build your own Large language model (LLM)-enabled chat application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
 spec:
@@ -72,9 +72,19 @@ spec:
             - properties:
                 modelServer:
                     const: vLLM
+                modelName:
+                  ui:help: The Model being used on this Model Server.
+                  type: string
+                  enum:
+                    - instructlab/granite-7b-lab
             - properties:
                 modelServer:
                     const: llama.cpp
+                modelName:
+                  ui:help: The Model being used on this Model Server.
+                  type: string
+                  enum:
+                    - instructlab/granite-7b-lab
             # SED_LLM_SERVER_END
 
     - title: Application Repository Information
