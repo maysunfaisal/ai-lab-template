@@ -76,8 +76,7 @@ spec:
                 modelName:
                   title: Model Name
                   description: LAB (Large-scale Alignment for chatBots) is a novel synthetic data-based alignment tuning method for LLMs from IBM Research. Granite-7b-lab is a Granite-7b-base derivative model trained with the LAB methodology, using Mixtral-8x7b-Instruct as a teacher model.
-                  ui:help: The name of the model deployed on the model server being used.
-                  default: instructlab/granite-7b-lab
+                  ui:help: 2d The name of the model deployed on the model server being used.
                   type: string
                   enum:
                     - instructlab/granite-7b-lab
@@ -87,8 +86,7 @@ spec:
                 modelName:
                   title: Model Name
                   description: LAB (Large-scale Alignment for chatBots) is a novel synthetic data-based alignment tuning method for LLMs from IBM Research. Granite-7b-lab is a Granite-7b-base derivative model trained with the LAB methodology, using Mixtral-8x7b-Instruct as a teacher model.
-                  ui:help: The name of the model deployed on the model server being used.
-                  default: instructlab/granite-7b-lab
+                  ui:help: 2d The name of the model deployed on the model server being used.
                   type: string
                   enum:
                     - instructlab/granite-7b-lab
