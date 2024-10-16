@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: object-detection
-  title: Object Detection Application
+  name: object-detection1
+  title: Object Detection1 Application
   description: Identify and locate objects in an image using an AI-enabled Object Detection Application. Pick from the DEtection TRansformer (DETR) model servers or bring your own DEtection TRansformer (DETR).
   tags: ["ai", "detr", "python"]
 spec:
