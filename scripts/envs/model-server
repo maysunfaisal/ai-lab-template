@@ -14,7 +14,7 @@ export VLLM_SRC="https://github.com/rh-aiservices-bu/llm-on-openshift/tree/main/
 
 # https://huggingface.co/ibm-granite/granite-3.1-8b-instruct
 export LLM_MODEL_NAME="ibm-granite/granite-3.1-8b-instruct"
-export LLM_MAX_MODEL_LEN=4096
+export LLM_MAX_MODEL_LEN=131072
 export LLM_MODEL_CLASSIFICATION="Text Generation"
 export LLM_MODEL_LICENSE="Apache-2.0"
 export LLM_MODEL_SRC="https://huggingface.co/ibm-granite/granite-3.1-8b-instruct"
