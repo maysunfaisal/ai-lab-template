@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: model-server
-  title: Model Server, No Application
+  name: model-server2
+  title: Model Server, No Application2
   description: Deploy a granite-3.1 8b model with a vLLM server. While no application is configured, this model server can be utilized in other Software Templates, like a Chatbot Application for instance.
   tags: ["ai", "vllm", "modelserver"]
   annotations:
