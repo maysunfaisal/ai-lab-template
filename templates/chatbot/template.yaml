@@ -340,7 +340,7 @@ spec:
           webhookSecret: pipelines-secret
           webhookSecretKey: webhook.secret
           defaultBranch: main
-          initContainer: quay.io/maysunfaisal/granite-3.1-8b-instruct-gguf:latest2
+          initContainer: quay.io/maysunfaisal/granite-3.1-8b-instruct-gguf:latest3
           modelInitCommand: "['/usr/bin/install', '/model/model.file', '/shared/']"
           modelPath: "/model/model.file"
           appContainer: ${{ 'quay.io/redhat-ai-dev/ai-template-bootstrap-app:latest' if parameters.hostType === 'GitHub' else 'quay.io/redhat-ai-dev/chatbot:latest' }}
