@@ -13,7 +13,7 @@ export INIT_CONTAINER="quay.io/maysunfaisal/granite-3.1-8b-instruct-gguf:latest"
 export INIT_CONTAINER_COMMAND="['cp', '-R', '/model/granite-3.1-8b-instruct-GGUF', '/shared/granite-3.1-8b-instruct-GGUF']"
 
 # https://github.com/containers/ai-lab-recipes/tree/main/model_servers/llamacpp_python
-export MODEL_SERVICE_CONTAINER="quay.io/ai-lab/llamacpp_python:latest"
+export MODEL_SERVICE_CONTAINER="quay.io/maysunfaisal/llamacpp_python:0.3.8"
 export MODEL_SERVICE_DESC="A Python binding of LLM inference in C/C++ with minimal setup"
 export MODEL_SERVICE_SRC="https://github.com/containers/ai-lab-recipes/tree/main/model_servers/llamacpp_python"
 export MODEL_PATH="/model/granite-3.1-8b-instruct-GGUF"

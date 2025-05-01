@@ -248,7 +248,7 @@ spec:
           appContainer: ${{ 'quay.io/redhat-ai-dev/ai-template-bootstrap-app:latest' if parameters.hostType === 'GitHub' else 'quay.io/redhat-ai-dev/rag:latest' }}
           appPort: 8501
           appRunCommand: "streamlit run rag_app.py"
-          modelServiceContainer: quay.io/ai-lab/llamacpp_python:latest
+          modelServiceContainer: quay.io/maysunfaisal/llamacpp_python:0.3.8
           modelServicePort: 8001
           customModelName: ${{ parameters.modelName }}
           modelName: ibm-granite/granite-3.1-8b-instruct
@@ -345,7 +345,7 @@ spec:
           modelPath: "/model/granite-3.1-8b-instruct-GGUF"
           appContainer: ${{ 'quay.io/redhat-ai-dev/ai-template-bootstrap-app:latest' if parameters.hostType === 'GitHub' else 'quay.io/redhat-ai-dev/rag:latest' }}
           appPort: 8501
-          modelServiceContainer: quay.io/ai-lab/llamacpp_python:latest
+          modelServiceContainer: quay.io/maysunfaisal/llamacpp_python:0.3.8
           modelServicePort: 8001
           # SED_LLM_SERVER_START
           # for vllm
