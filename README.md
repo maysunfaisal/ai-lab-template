@@ -106,4 +106,4 @@ For example: `/docs/images`.
 
 ### Using "default" Namespace for AI Software Templates
 
-Note, that as the `"default"` Namespace has specific permissions, choosing this Namespace to deploy your AI Software Templates applications is not supported.
+Note, that as the `"default"` Namespace has specific permissions, choosing this Namespace to deploy your AI Software Templates applications is not supported.test2
